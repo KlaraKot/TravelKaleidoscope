@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Georama:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.landing-page {
+    width: 100%;
+    height: 100vh;
+    font-size: 16px;
+    position: relative;
+}
+
+.landing-container {
+    background-color: #000;
+    height: 70%;
+    position: relative; 
+}
+
+.landing-container-bg {
+    top: 5%;
+    position: absolute;
+    background-image: url('../source/sketch.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 90%;
+}
+
+.landing-container-bg-gradient {
+    opacity: .7;
+    width: 100%;
+    height: 100%;
+    background: rgb(16,17,16);
+    background: linear-gradient(0deg, rgba(16,17,16,1) 0%, rgba(91,91,91,1) 35%, rgba(195,199,190,1) 100%); 
+}
+
+.landing-header {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.landing-header > button {
+    padding: 0px 40px;
+    background-color: transparent;
+    border: none;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    font-family: 'Georama';
+    letter-spacing: 5px;
+    scale: 1.1;
+    -webkit-transition: all .4s;
+    -moz-transition: all .4s;
+    -o-transition: all .4s;
+    transition: text-shadow .4s linear;
+}
+
+.landing-header > button:hover {
+    cursor: pointer;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+.landing-header > h2 {
+    color: #FFFFFF;
+    font-family: 'Zilla Slab';
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin-top: 3px;
+}
+
+
+.landing-menu {
+    width: 100%;
+}
+
+.landing-menu ul {
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    list-style-type: none;
+}
+
+.landing-menu ul > li {
+    padding: 20px 25px;
+    font-size: 1.1rem;
+    font-family: 'Bebas Neue';
+    text-transform: uppercase;
+    transition: scale .2s linear;
+}
+
+.landing-menu ul > li:hover {
+    scale: 1.1;
+    cursor: crosshair;
+}
+
+
+.landing-content {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.bstar {
+    background: url('../source/3-30049_black-star-star-tattoo-png.jpeg');
+    width: 50px;
+    height: 50px;
+    margin: 20px auto;
+    background-size: cover;
+}
+
+.landing-content h3 {
+    font-family: 'Roboto Mono';
+    font-size: 0.9rem;
+    text-transform: uppercase;
+}
+
+.landing-content h1.title {
+    font-family: 'Ubuntu';
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+img.earth {
+    width: 300px;
+    margin: 100px 0;
+}

@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Georama:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
+}
+
+body {
+  font-size: 16px;
+}
+
+.survey-page {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+}
+
+.navbar {
+  display: flex;
+  height: 60px;
+  padding: 0 30px;
+  position: relative;
+  background: #fff;
+}
+
+
+.navbar-brand {
+  font-family: 'Dancing Script', cursive;
+  font-size: 2.3rem;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000;
+  user-select: none;
+  z-index: 2;
+}
+
+.item-container {
+  list-style: none;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-item > a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-family: 'roboto mono';
+  cursor: pointer;
+  color: black;
+}
+
+.survey-container {
+  width: 100%;
+  min-height: calc(100vh - 60px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+  position: relative;
+  padding: 50px;
+}
+
+.survey-container-bg {
+    position: fixed;
+    background-image: url('../source/road_sketch1.jpg');
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    opacity: .4;
+    z-index: -1;
+  }
+
+.survey-box {
+  background-color: rgba(255, 255, 255, 1);
+  width: 600px;
+  height: auto;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  border-radius: 2px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+}
+
+
+
+h1 {
+  font-family: 'Roboto mono';
+  margin-bottom: 10px;
+  font-weight: 300;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+}
+
+h2 {
+    font-family: 'Roboto Mono';
+    font-size: .9rem;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+  display: block;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  padding: 8px;
+  width: 450px;
+  height: 30px;
+  border: none;
+  border-bottom: 1px solid #AAA;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: .8rem;
+  transition: 0.2s ease;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  border-bottom: 2px solid #16a085;
+  color: #16a085;
+  transition: 0.2s ease;
+}
+
+input[type="submit"] {
+    margin-top: 20px;
+    margin-bottom: 5px;
+    width: 200px;
+    background: #16a085;
+    border: none;
+    border-radius: 2px;
+    color: #FFF;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: 0.1s ease;
+    cursor: pointer;
+    display: block;
+    line-height: 30px;
+  }
+  
+  input[type="submit"]:hover,
+  input[type="submit"]:focus {
+    opacity: 0.8;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    transition: 0.1s ease;
+  }
+  
+  input[type="submit"]:active {
+    opacity: 1;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+    transition: 0.1s ease;
+  }
+
+  .survey-footer {
+      width: 100%;
+      height: 100px;
+
+  }
